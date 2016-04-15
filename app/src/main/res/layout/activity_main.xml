@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical"
+		android:paddingBottom="@dimen/activity_vertical_margin"
+		android:paddingLeft="@dimen/activity_horizontal_margin"
+		android:paddingRight="@dimen/activity_horizontal_margin"
+		android:paddingTop="@dimen/activity_vertical_margin"
+		tools:context="com.example.android.easyenglish.MainActivity"
+		>
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:textStyle="bold"
+			android:text="Welcome to EasyEnglish Test!"
+			android:textSize="20sp"/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:paddingTop="16dp"
+			android:text="Please enter you name:"
+			android:textSize="16sp"/>
+
+		<EditText
+			android:id="@+id/txtUsername"
+			android:layout_width="150dp"
+			android:layout_height="wrap_content"
+			android:inputType="text"
+			android:textColor="#000000"/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="1. How old is Peter? 'My name is Peter. I am a student. I am 19 years old. I am from London. I have 2 brothers and a sister. My father is a doctor. My mother is a teacher'. "
+			android:textSize="16sp"/>
+
+		<RadioGroup
+			android:id="@+id/q1"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+
+			<RadioButton
+				android:id="@+id/q1a1"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="A. He is 19 years old."/>
+
+			<RadioButton
+				android:id="@+id/q1a2"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="B. He is 16 years old."/>
+
+		</RadioGroup>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:paddingTop="16dp"
+			android:text="2. What is a heart of London? 'London is the capital of Great Britain, its political, economic, and commercial centre. It is one of the largest cities in the world and the largest city in Europe. Its population is about 8 million.
+London is divided into several parts: the City, Westminster, the West End, and the East End.
+The heart of London is the City, its financial and business centre.'"
+			android:textSize="16sp"/>
+
+		<RadioGroup
+			android:id="@+id/q2"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+
+			<RadioButton
+				android:id="@+id/q2a1"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="A. West End."/>
+
+			<RadioButton
+				android:id="@+id/q2a2"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="B. The City."/>
+
+		</RadioGroup>
+
+		<Button
+			android:id="@+id/btnSubmit"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:onClick="showResult"
+			android:text="SUBMIT"/>
+
+		<TextView
+			android:id="@+id/txtResult"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="24sp"/>
+		<ImageView
+			android:layout_width="match_parent"
+			android:layout_height="100dp"
+			android:src="@drawable/img_flag3"
+			android:scaleType="centerInside"/>
+
+
+	</LinearLayout>
+</ScrollView>
